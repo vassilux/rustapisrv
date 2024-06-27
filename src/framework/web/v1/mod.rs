@@ -1,6 +1,6 @@
 use actix_web::web;
 
-use crate::adapters::controllers::v1::{create_user_endpoint, get_user_endpoint};
+use crate::adapters::api::v1::{create_user_endpoint, get_user_endpoint};
 
 pub fn init_routes(cfg: &mut web::ServiceConfig) {
     cfg.service(
